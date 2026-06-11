@@ -3,7 +3,7 @@
 Este repositorio contiene el proyecto final correspondiente al examen del **Módulo 2** del bootcamp **Desarrollo Front-End**. El desafío consistió en consolidar e integrar de forma avanzada todos los conceptos de maquetación, responsividad y estilos dinámicos aprendidos a lo largo del módulo.
 
 ## 🔗 Revisa aquí
-
+https://ciga25.github.io/m3e_cssavanzado/
 
 ## 🎯 Objetivos del Examen
 * **Layout Avanzado con CSS Grid:** Estructurar la arquitectura global del sitio (distribución de paneles de navegación, cuerpo de contenido y pie de página) en un sistema bidimensional.
