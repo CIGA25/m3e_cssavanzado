@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100dvh;
+  width: 100%;
+  background-color: #f2f0ef;
+  color: #212121;
+  grid-template-areas:
+    "lat"
+    "main"
+    "pie";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 100;
+}
+
+.lateral {
+  display: flex;
+  grid-area: lat;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 0 16px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+h1 {
+  font-family: "Crimson Pro", serif;
+  font-style: italic;
+  font-size: 32px;
+  white-space: nowrap;
+}
+
+.logo img {
+  display: inline;
+  max-width: max-content;
+  height: 72px;
+  object-fit: contain;
+}
+
+.navbar {
+  background-color: #f2f0ef;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#menu {
+  display: none;
+}
+
+.burger {
+  font-size: 32px;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: all 0.2s linear;
+}
+
+.burger:hover {
+  border: 2px solid #212121;
+}
+
+.burger:active {
+  background-color: #212121;
+  color: #f2f0ef;
+}
+
+.ulinks {
+  background-color: #f2f0ef;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 12px;
+  padding-right: 8px;
+  transition: all 0.2s linear;
+  top: 136px;
+  height: 0px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#menu:checked + .ulinks {
+  height: 120px;
+}
+
+.litems {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.link {
+  padding: 8px;
+  border: 2px solid transparent;
+  transition: all 0.2s linear;
+}
+
+.link:hover {
+  border-color: #212121;
+}
+
+.link:active {
+  background-color: #212121;
+  color: #f2f0ef;
+}
+
+.main {
+  margin: 16px 16px auto 16px;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.main-des {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-des h2 {
+  font-family: "Crimson Pro", serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.main-des-p {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 8px;
+}
+
+.mivi {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main-mvv {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-mvv h2 {
+  font-family: "Crimson Pro", serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.main-mvv p {
+  font-size: 12px;
+}
+
+.main-mvv ol {
+  list-style: decimal;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 32px;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.box-card {
+  background-color: #f2f0ef;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 2px solid #212121;
+  padding: 12px;
+  filter: grayscale();
+  transition: all 0.2s linear;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.box-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card h4 {
+  font-weight: bold;
+}
+
+.card h5 {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.descripción {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-card:hover {
+  background-color: #212121;
+  color: #f2f0ef;
+  filter: grayscale(0);
+  transform: scale(1.02);
+}
+
+.push button {
+  width: 100%;
+  background-color: #f2f0ef;
+  color: #212121;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  border: 2px solid #212121;
+  transition: all 0.2s linear;
+}
+
+button:hover {
+  background-color: #212121;
+  color: #f2f0ef;
+  border: 2px solid #f2f0ef;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #f2f0ef;
+  color: #212121;
+}
+
+.f-section {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-container h2 {
+  font-family: "Crimson Pro", serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.form-container p {
+  font-size: 12px;
+  max-width: 600px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin-top: 108px;
+}
+
+.f-contenido {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-contenido label {
+  font-family: "Crimson Pro", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.pie {
+  background-color: #212121;
+  display: flex;
+  grid-area: pie;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  padding: 0 16px;
+  margin-top: 32px;
+}
+
+.logo-pie {
+  display: flex;
+  align-items: center;
+}
+
+.logo-pie h1 {
+  color: #f2f0ef;
+  font-size: 20px;
+}
+
+.logo-pie img {
+  width: auto;
+  height: 36px;
+  filter: invert(95%);
+}
+
+.pie-redes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pie-redes i {
+  color: #f2f0ef;
+  font-size: 32px;
+}
+
+.redes {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .lateral {
+    padding: 0 32px;
+  }
+
+  .main {
+    margin: 20px 32px auto 32px;
+  }
+
+  .main h2 {
+    font-size: 24px;
+  }
+
+  .mivi {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contenido {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .pie {
+    padding: 0 32px;
+  }
+
+  .box-card:hover {
+    transform: scale(1.03);
+  }
+
+  .logo-pie h1 {
+    font-size: 24px;
+  }
+
+  .logo-pie img {
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    grid-template-areas:
+      "lat main"
+      "lat main"
+      "pie pie";
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .lateral {
+    height: auto;
+    padding: 0;
+    margin: 40px 0px 36px 60px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .logo img {
+    height: 96px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .ulinks {
+    position: static;
+    overflow: visible;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    padding: 0;
+    margin: 132px 0 auto 0;
+  }
+
+  .litems {
+    font-size: 16px;
+  }
+
+  .navbar a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .main {
+    margin: 40px 108px auto 56px;
+    gap: 60px;
+  }
+
+  .main-des {
+    gap: 32px;
+  }
+
+  .main-des h2 {
+    font-size: 32px;
+  }
+
+  .main-des-p {
+    font-size: 16px;
+    gap: 16px;
+  }
+
+  .mivi {
+    gap: 60px;
+  }
+
+  .main-mvv h2 {
+    font-size: 32px;
+  }
+
+  .main-mvv p {
+    font-size: 16px;
+  }
+
+  .form-container h2 {
+    font-size: 32px;
+  }
+
+  .form-container p {
+    font-size: 16px;
+  }
+
+  .contenido {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 36px;
+  }
+
+  .pie {
+    height: 220px;
+    padding: 0 36px;
+    margin-top: 60px;
+  }
+
+  .logo-pie h1 {
+    font-size: 46px;
+  }
+
+  .logo-pie img {
+    height: 60px;
+  }
+}

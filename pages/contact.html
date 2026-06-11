@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d47e9a31f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>The Lighthouse</title>
+  </head>
+  <body>
+    <header class="lateral">
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <img
+            src="../assets/img/faro.webp"
+            alt="Imagen vectorizada de un faro"
+          />
+          <h1>The Lighthouse</h1>
+        </a>
+        <label class="burger" for="menu">&#9776;</label>
+        <input type="checkbox" id="menu" />
+        <ul class="ulinks">
+          <li class="litems">
+            <a href="../index.html" class="link">Archivos Desclasificados</a>
+          </li>
+          <li class="litems">
+            <a href="../pages/about.html" class="link">Acerca de</a>
+          </li>
+          <li class="litems">
+            <a href="#" class="link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="f-section">
+        <div class="form-container">
+          <h2>Contacto</h2>
+          <p>
+            No toda la información llega a los archivos oficiales. Si has
+            presenciado algo que contradice la versión pública de los hechos o
+            tienes información de otros fenómenos, ponte en contacto con
+            nosotros.
+          </p>
+
+          <form action="#" method="POST">
+            <div class="f-contenido">
+              <label for="name">Nombre o Apodo</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Escribe tu nombre o apodo"
+                required
+              />
+            </div>
+            <div class="f-contenido">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ejemplo@tucorreo.com"
+                required
+              />
+            </div>
+            <div class="f-contenido">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Escribe tu mensaje aquí..."
+                required
+              ></textarea>
+            </div>
+            <a href="#" target="_blank" class="push"
+              ><button>Enviar mensaje</button></a
+            >
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="pie">
+      <div class="pie-redes">
+        <a href="#" class="logo-pie">
+          <img
+            src="../assets/img/faro.webp"
+            alt="Imagen vectorizada de un faro"
+          />
+          <h1>The Lighthouse</h1>
+        </a>
+        <div class="redes">
+          <a href="#">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a href="../pages/contact.html">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
