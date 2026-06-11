@@ -243,7 +243,8 @@ h1 {
   transform: scale(1.02);
 }
 
-.push button {
+.push p {
+  text-align: center;
   width: 100%;
   background-color: #f2f0ef;
   color: #212121;
@@ -254,14 +255,14 @@ h1 {
   transition: all 0.2s linear;
 }
 
-button:hover {
+.push p:hover {
   background-color: #212121;
   color: #f2f0ef;
   border: 2px solid #f2f0ef;
   cursor: pointer;
 }
 
-button:active {
+.push p:active {
   background-color: #f2f0ef;
   color: #212121;
 }
